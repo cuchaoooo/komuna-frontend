@@ -1,4 +1,3 @@
-/* --- Global Styles & Font --- */
 :root {
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.6;
@@ -8,11 +7,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Nueva paleta de colores */
   --background-start: #1a202c;
   --background-end: #2d3748;
   --card-background: #2d3748;
-  --primary-accent: #4fd1c5; /* Turquesa vibrante */
+  --primary-accent: #4fd1c5; 
   --primary-accent-hover: #81e6d9;
   --text-primary: #e2e8f0;
   --text-secondary: #a0aec0;
@@ -24,19 +22,18 @@
 body {
   margin: 0;
   color: var(--text-primary);
-  /* Degradado para el fondo */
   background: linear-gradient(135deg, var(--background-start), var(--background-end));
   min-height: 100vh;
 }
 
-/* --- Header y Navegación --- */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(26, 32, 44, 0.8); /* Fondo semi-transparente */
-  backdrop-filter: blur(10px); /* Efecto "glass" */
+  background-color: rgba(26, 32, 44, 0.8); 
+  backdrop-filter: blur(10px); 
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
@@ -88,7 +85,7 @@ body {
 }
 
 
-/* --- Contenedor Principal y Páginas --- */
+
 .container {
   max-width: 1200px;
   margin: 2rem auto;
@@ -104,7 +101,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- Estilos para las Tarjetas (HomePage) --- */
+
 .tienda-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -212,7 +209,6 @@ button[type="submit"]:disabled {
   box-shadow: none;
 }
 
-/* --- Mensajes de Éxito y Error --- */
 .error-message, .success-message {
   margin-top: 1.5rem;
   padding: 1rem;
