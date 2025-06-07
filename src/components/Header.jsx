@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/AuthContext.jsx'; 
 
 const Header = () => {
-    const { codigo, logout } = useAuth();
+    const { vendedor, logout } = useAuth();
     const navigate = useNavigate();
 
     const handleLogout = () => {
@@ -16,7 +16,7 @@ const Header = () => {
             <Link to="/" className="logo">Komuna</Link>
             <nav>
                 <Link to="/">Tiendas</Link>
-                {codigo ? (
+                {vendedor ? (
                     <>
                         <Link to="/dashboard">Mi Panel</Link>
                         <button onClick={handleLogout} className="nav-button">Cerrar Sesión</button>
